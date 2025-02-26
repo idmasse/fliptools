@@ -1,0 +1,44 @@
+# Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Flask specific
+.env
+instance/
+.webassets-cache
+.token.json
+.token
+
+# Distribution / build folders
+dist/
+
+# React / Node files
+node_modules/
+
+# Environment files for React
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+.DS_store
