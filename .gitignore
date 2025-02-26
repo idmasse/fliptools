@@ -22,6 +22,7 @@ dist/
 # React / Node files
 node_modules/
 
+
 # Environment files for React
 .env.local
 .env.development.local
