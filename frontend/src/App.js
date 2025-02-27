@@ -176,9 +176,9 @@ Test Brand 2,Brand Pitt LLC,Hugh Jazz,hugh@somebrand.com,Un-sustainable fashion 
             <div className="App-card csv-template-info">
               <h3>CSV Template</h3>
               <p className="template-instruction">
-                <strong>Required fields:</strong> brand_name, companyName, mainContactName, vendorMainContactEmail
+                <strong>Required fields:</strong> brand_name, companyName, mainContactName, vendorMainContactEmail, websiteUrl
                 <br />
-                <strong>Optional fields:</strong> description, foundedInYear, countryOfOrigin, instagramUrl, websiteUrl, mainContactPhone
+                <strong>Optional fields:</strong> description, foundedInYear, countryOfOrigin, instagramUrl, mainContactPhone
                 <br /><br />
                 If optional columns are missing or fields are empty, default values will be used.
                 <br /><br />
@@ -204,7 +204,7 @@ Test Brand 2,Brand Pitt LLC,Hugh Jazz,hugh@somebrand.com,Un-sustainable fashion 
         return (
           <>
             <h1>Thing 2</h1>
-            <p className="tagline">Something else maybe eventually</p>
+            <p className="tagline">Something else eventually</p>
             <div className="App-card">
               <h2>Coming...sometime</h2>
               <p>Some other thing that will do things that suck doing manually.</p>
@@ -215,7 +215,7 @@ Test Brand 2,Brand Pitt LLC,Hugh Jazz,hugh@somebrand.com,Un-sustainable fashion 
         return (
           <>
             <h1>Tool 3</h1>
-            <p className="tagline">Something else maybe eventually</p>
+            <p className="tagline">Something else eventually</p>
             <div className="App-card">
               <h2>Coming...eventually</h2>
               <p>Some other OTHER thing that will do things that suck doing manually.</p>
