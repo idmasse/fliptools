@@ -43,3 +43,5 @@ yarn-error.log*
 /coverage
 
 .DS_store
+
+maybe_package.json
