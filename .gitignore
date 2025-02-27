@@ -18,10 +18,10 @@ instance/
 
 # Distribution / build folders
 dist/
+/frontend/build/
 
 # React / Node files
 node_modules/
-
 
 # Environment files for React
 .env.local
@@ -41,7 +41,4 @@ yarn-error.log*
 
 # testing
 /coverage
-
 .DS_store
-
-maybe_package.json
