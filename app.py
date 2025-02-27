@@ -51,7 +51,7 @@ def upload_file():
         logger.info(f"CSV columns (cleaned): {fieldnames}")
         
         # Check for required columns
-        required_columns = ['brand_name', 'companyName', 'mainContactName', 'vendorMainContactEmail']
+        required_columns = ['brand_name', 'companyName', 'mainContactName', 'vendorMainContactEmail', 'websiteUrl']
         missing_columns = [col for col in required_columns if col not in fieldnames]
         
         if missing_columns:
@@ -88,21 +88,21 @@ def upload_file():
             company_name = clean_row.get('companyName')
             main_contact_name = clean_row.get('mainContactName')
             vendor_email = clean_row.get('vendorMainContactEmail')
+            website = clean_row.get('websiteUrl')
             
             # Get optional values from CSV columns
             description = clean_row.get('description')
             founded_year = clean_row.get('foundedInYear')
             country = clean_row.get('countryOfOrigin')
             instagram = clean_row.get('instagramUrl')
-            website = clean_row.get('websiteUrl')
             phone = clean_row.get('mainContactPhone')
             
             logger.info(f"Extracted required values - brand_name: {brand_name}, company_name: {company_name}, "
-                      f"main_contact_name: {main_contact_name}, vendor_email: {vendor_email}")
+                      f"main_contact_name: {main_contact_name}, vendor_email: {vendor_email}, websiteUrl: {website}")
             
-            if any([description, founded_year, country, instagram, website, phone]):
+            if any([description, founded_year, country, instagram, phone]):
                 logger.info(f"Extracted optional values - description: {description}, founded_year: {founded_year}, "
-                          f"country: {country}, instagram: {instagram}, website: {website}, phone: {phone}")
+                          f"country: {country}, instagram: {instagram}, phone: {phone}")
 
             # Check for missing values in this row
             missing_values = []
@@ -114,6 +114,8 @@ def upload_file():
                 missing_values.append("mainContactName")
             if not vendor_email:
                 missing_values.append("vendorMainContactEmail")
+            if not website:
+                 missing_values.append("websiteUrl")
             
             if missing_values:
                 missing_values_str = ', '.join(missing_values)
