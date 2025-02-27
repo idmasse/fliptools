@@ -76,6 +76,9 @@ def create_brands(brand_name, company_name, main_contact_name, vendor_email,
     
     if not vendor_email:
         missing_fields.append("vendor email")
+
+    if not website:
+        missing_fields.append("website")
     
     if missing_fields:
         field_list = ", ".join(missing_fields)
