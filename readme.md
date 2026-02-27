@@ -25,7 +25,7 @@ App: https://fliptools-d444ce87e21f.herokuapp.com/
   - Compiled into `frontend/build` and served by Flask in production mode 
   - Repo assumes a standard React app inside `frontend/`
 
---
+---
 
 ## CSV format
 ### Required columns
