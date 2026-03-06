@@ -2,7 +2,7 @@
 
 A lightweight Flask API + React UI for bulk-creating brand profile pages from a CSV upload. The React frontend provides a simple upload interface, while the Flask backend validates each row and calls an upstream onboarding API to create each brand, returning per-row success/error results.
 
-App: https://fliptools-d444ce87e21f.herokuapp.com/
+#### App can be previewed at: fliptools.vercel.app
 
 ---
 
